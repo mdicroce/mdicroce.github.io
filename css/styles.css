@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: dogica;
+    src: url();
+}
+@font-face {
+    font-family: pixels;
+    src: url();
+}@font-face {
+    font-family: pixely;
+    src: url();
+}@font-face {
+    font-family: pixeled;
+    src: url();
+}@font-face {
+    font-family: pixel2d;
+    src: url();
+}
+#welcome-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: aquamarine;
+}
