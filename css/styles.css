@@ -1,26 +1,89 @@
+
+@font-face {
+    font-family: "dogica";
+    src: url("./typos/dogica/TTF/dogica.ttf") format('truetype');
+}
+@font-face {
+    font-family: "pixelmix";
+    src: url("./typos/pixelmix/pixelmix.ttf") format('truetype');
+}
+@font-face {
+    font-family: "pixeled";
+    src: url("./typos/Pixeled.ttf") format('truetype');
+}@font-face {
+    font-family: "Pixel2Drg";
+    src: url("./typos/Pixel2Drg.ttf") format('truetype');
+}
 * {
-  margin: 0;
-  padding: 0;
-}
-@font-face {
-    font-family: dogica;
-    src: url();
-}
-@font-face {
-    font-family: pixels;
-    src: url();
-}@font-face {
-    font-family: pixely;
-    src: url();
-}@font-face {
-    font-family: pixeled;
-    src: url();
-}@font-face {
-    font-family: pixel2d;
-    src: url();
-}
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px){
+      *{
+          font-size: 10px;
+      }
+  }
+  @media (max-width: 420px)
+  {
+      *{
+          font-size: 8px;
+      }
+  }
 #welcome-section {
   height: 100vh;
   width: 100vw;
-  background-color: aquamarine;
+  background-color: black;
+  font-family: "pixeled",monospace;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+#main-menu{
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    font-family: monospace;
+}
+.title-center{
+    width: max-content;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem;
+}
+.titleHeader{
+    font-size: 2rem;
+}
+.center-menu{
+    width: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.select-option{
+    list-style: none;
+    width: max-content;
+    width: max-content;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.select-option-icon{
+    width: 2rem;
+    height: auto;
+    margin: 0 1rem 0 0;
+    position: relative;
+    top: 3px;    
+}
+.header-footer{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
 }
