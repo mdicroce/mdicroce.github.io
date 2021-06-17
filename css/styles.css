@@ -187,8 +187,9 @@
 
 #projects {
   background-color: rgb(46, 53, 59);
-  height: 80vh;
+  height: fit-content;
   padding: 2rem;
+
 }
 #projects-container {
   margin: 0 auto;
@@ -245,4 +246,80 @@
 #links{
   background-color: rgb(90, 103, 114);
   height: 100vh;
+  
+}
+.links-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.link-contact{
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+  font-size: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 3px 3px 2px  rgba(0,0,0,0.2);
+  border-radius: 1rem;
+  width: 400px;
+  margin: 1rem;
+  padding: 3px;
+}
+.link-contact:hover{
+  
+  animation-name: links-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes links-hover {
+  0%{
+    background-color: rgb(90, 103, 114);
+  }
+  100%{
+    background-color: rgb(122, 144, 163);
+    color: white;
+  }
+  
+}
+.link-contact p{
+  font-size: inherit;
+  display: inline-block;
+}
+
+.link-icon{
+  display: inline-block;  
+}
+@media (max-width: 1328px) {
+  .links-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-contact{
+    width: 40rem;
+  }
+}
+.links-para{
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  color: rgb(235, 235, 235);
+  padding: 5rem 0 2rem 0;
+}
+
+.links-para-h{
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+.links-para-p
+{
+  margin: 2rem;
+  position: relative;
+  top: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
 }
