@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -32,6 +33,7 @@
   #about-me-p {
     font-size: 1.5rem;
   }
+  
 }
 #welcome-section {
   height: 100vh;
@@ -49,7 +51,7 @@
 #main-menu {
   height: 100vh;
   width: 100vw;
-  background-color: blue;
+  
   font-family: monospace;
 }
 .title-center {
@@ -111,6 +113,7 @@
   border-top: 3rem solid red;
   border-bottom: 3rem solid red;
   border-image: url(../images/dibujo.svg) 33% round;
+  
 }
 #about-me-title {
   font-family: "pixelMix", monospace;
@@ -152,38 +155,94 @@
   }
 }
 
-.project-tile{
-  width: 250px;
-  height: 200px;
-  background-color: aqua;
-  border: 1px solid white;
-  margin: 0.5rem;
-  border: 10px solid red;
+.project-tile {
+  width: 30%;
+  height: 40%;
+  background-color: rgba(0,0,0,0.3);
+  
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  
 }
-.project-tile:hover
-{
-    width: calc(250px + 25px);
-    height: 220px;
+.project-tile:hover {
+  animation-name: project-tile-hover-a;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-#projects{
-    border: 2px solid red;
-    padding: 2rem;
+@keyframes project-tile-hover-a {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
 }
-#projects-container{
-    margin: 0 auto;
-    display: flex;
-    width: fit-content;
-    flex-wrap: wrap;
-    
+.project-tile-container {
+  background-color: red;
+  
+  border: 1px solid white;
 }
-.project-image-container{
-    height: 66%;
+
+#projects {
+  background-color: rgb(46, 53, 59);
+  height: 80vh;
+  padding: 2rem;
+}
+#projects-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+.project-image-container {
+  height: auto;
+  width: 100%;
+}
+
+.project-tile-title{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: large;
+  padding: 2px;
+  text-align: center;
+  color: #fcd7d0;
+  
+}
+.project-image {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+@media (max-width:768px){
+  .project-tile{
     width: 100%;
+  }
+  #projects{
+    height: fit-content;
+  }
 }
-.project-image{
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-    height: auto;
+@media (max-width: 1024px)
+{
+  #projects-container{
+    width: 80%;
+  }
+  .project-tile{
+    width: 45%;
+  }
+  #projects{
+    height: fit-content;
+  }
+}
+
+
+#links{
+  background-color: rgb(90, 103, 114);
+  height: 100vh;
 }
