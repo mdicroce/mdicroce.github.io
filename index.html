@@ -10,21 +10,26 @@
     <!--load all styles -->
 </head>
 <body>
+    <div id="tetris-cont">
+    
+    </div>
     <nav id="navbar"><a href=""></a></nav>
     <header id="welcome-section">
+        
         <div class="title-center">
             <h1 class="titleHeader">Hi, i'm Mat&iacute;as, a web dev.</h1>
         </div>
         <div class="center-menu">
             <ul>
-                <li class="select-option"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>About Me.</li>
-                <li class="select-option"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>Contact Section</li>
-                <li class="select-option"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>Proyects</li>
-                <li class="select-option"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>Let's play!</li>
+                <li class="select-option" href="about-me"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>About Me</li>
+                <li class="select-option" href="projects"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>Proyects</li>
+                <li class="select-option" href="links"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>Contact Section</li>
+                <li class="select-option" id="letsplay" href="letsplay"><img class="select-option-icon" src="./css/svg/Cafesito.svg"/>Let's play!</li>
             </ul>
         </div>
         <footer class="header-footer">
-            <p>Build in 2021 by Matias Di Croce</p>
+            <div class="arrow"><i class="fas fa-angle-down"></i><div>
+            
         </footer>
     </header>
     <main id="main-menu">
@@ -52,12 +57,12 @@
                 
             </div>
             <div id="projects-container">
-                <article class="project-tile"><div class="project-image-container"> <img class="project-image" src="./images/web1.svg" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></article>
-                <article class="project-tile"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></article>
-                <article class="project-tile"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></article>
-                <article class="project-tile"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></article>
-                <article class="project-tile"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></article>
-                <article class="project-tile"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></article>
+                <article class="project-tile"><a class="anchor-prevent" href="https://weatherbxl.netlify.app/"><div class="project-image-container"> <img class="project-image" src="./images/web1.svg" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></a></article>
+                <article class="project-tile"><a class="anchor-prevent" href="http://"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></a></article>
+                <article class="project-tile"><a class="anchor-prevent" href="http://"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></a></article>
+                <article class="project-tile"><a class="anchor-prevent" href="http://"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></a></article>
+                <article class="project-tile"><a class="anchor-prevent" href="http://"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></a></article>
+                <article class="project-tile"><a class="anchor-prevent" href="http://"><div class="project-image-container"> <img src="" alt="" srcset=""></div><h3 class="project-tile-title">Proyecto 1</h3></a></article>
             </div>
         </section>
         <section id="links">
@@ -72,9 +77,15 @@
                 <a class="link-contact" href="https://github.com/mdicroce"><i class="link-icon fab fa-github-square"></i> <p>Github</p></a>
                 <a class="link-contact" href="mailto:mddicroce@gmail.com"><i class="link-icon fas fa-mail-bulk"></i> <p>Mail</p></a>
             </div>
+            <footer class="footer">
+                <p>Build in 2021 by Matias Di Croce</p>
+            </footer>
         </section>
-    
-    
+        <section id="lets-play">
+            
+        </section>
     </main>
+    
+    <script src="./js/script.js"></script>
 </body>
 </html>
